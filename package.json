@@ -1,0 +1,39 @@
+{
+  "name": "d3sparkline",
+  "version": "1.0.0",
+  "description": "Creates Sparkline using d3 ",
+  "main": "build/index.js",
+  "scripts": {
+    "build": "babel src -d build",
+    "dev": "watch 'npm run build' src",
+    "test": "jest",
+    "test:watch": "npm test -- --watch"
+  },
+  "babel": {
+    "presets": [
+      "latest"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sudazzle/d3sparkline.git"
+  },
+  "keywords": [
+    "sparkline"
+  ],
+  "author": "Sudaman Shrestha <shrestha.sudaman@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sudazzle/d3sparkline/issues"
+  },
+  "homepage": "https://github.com/sudazzle/d3sparkline#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-latest": "^6.24.1",
+    "jest": "^23.0.1",
+    "watch": "^1.0.2"
+  },
+  "dependencies": {
+    "d3": "^5.4.0"
+  }
+}

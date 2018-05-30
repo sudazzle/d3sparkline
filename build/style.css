@@ -1,0 +1,58 @@
+body {
+      margin: 0;
+      font-family: sans-serif;
+    }
+    
+    svg.sparkline {
+      padding: 4px;
+      fill: none;
+      stroke: #8884d8;
+      stroke-width: 2px;
+    }
+
+    svg.sparkline[data-hide] {
+      stroke-width: 0;
+    }
+
+    .wrapper {
+      position: relative;
+      float: left;
+    }
+
+    .overlay {
+      fill: none;
+      stroke: none;
+      pointer-events: all;
+      cursor: none;
+    }
+
+    .tooltip {
+      display: none;
+      position: absolute;
+      pointer-events: none;
+      z-index: 999;
+      top: 2.5px;
+      margin-left: 15px;
+      background: #fff;
+      padding: 5px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      opacity: 0.8;
+      color: #8884d8;
+      font-size: 12px;
+      font-weight: 300;
+    }
+
+    .focus {
+      stroke: #000;
+      display: none;
+    }
+
+    .focus-circle {
+      stroke: #ff0000;
+    }
+
+    .hover-line {
+      stroke: #ccc;
+      stroke-width: 2px;
+    }
